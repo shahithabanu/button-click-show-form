@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+</head>
+<body>
+
+<h2>Using Javascript</h2>
+<button type="button" onclick="myFunction()">Click Me to view Form</button>
+<div id="formContainer"></div>
+
+</body>
+<script>
+function myFunction() {
+  var formContainer = document.getElementById("formContainer");
+
+  formContainer.innerHTML = `
+    <p>First name: <input type="text"></p>
+    <p>Last name: <input type="text"></p>
+    <p>Email: <input type="text"></p>
+    <p>Gender: <input type="radio" name="gender" value="female"> Female <input type="radio" name="gender" value="male"> Male</p>
+    <p>Country: <input type="checkbox" name="country" value="america"> America <input type="checkbox" name="country" value="africa"> Africa <input type="checkbox" name="country" value="india"> India</p>
+    <button type="submit">Submit</button>
+  `;
+}
+</script>
+</html>
